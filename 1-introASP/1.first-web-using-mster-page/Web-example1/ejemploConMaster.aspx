@@ -11,5 +11,7 @@
     <h2> haz click para ver los checkbox random</h2>
     <asp:Button ID="btnCheckBox" runat="server" Text="Mostrar" OnClick="btnCheckBox_Click1" />
     <asp:CheckBox ID="cbRandom" Visible="false" Text="pato" runat="server" />
+
+    <a href="about">Go to about</a>
 </asp:Content>
 

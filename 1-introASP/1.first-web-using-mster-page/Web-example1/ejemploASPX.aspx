@@ -14,6 +14,7 @@
     <form id="form1" runat="server">
         <div>
             <h1>Hola pa como estas?</h1>
+            <a href="about">regresar a about</a>
         </div>
     </form>
 </body>

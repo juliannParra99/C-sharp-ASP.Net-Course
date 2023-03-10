@@ -25,16 +25,22 @@ namespace Web_example1
         {
             string nombre = txtNombre.Text; 
             lblSaludo.Text = "Hola " + nombre;
+
+            //eel objeto response.redirect permite navegar entre paginas desde el code behind, pero
+            //nombre es muy recomendable utilizarlo, por que carga mucho el servidor por que al ejecutar
+            //esto y terminar el bloque ejecuta un 'end' que corta el codigo que sigue en el bloque y da una excepcion
+            // y puede si manejamos la excepcion toma la excepcion y no nos redirije etc; por lo que le colocamos
+            //un false para que no corte el hilo de ejecucion, por lo que si no tenemos ningun codigo mas abajo
+            //del response.redirect no pasa nada; pero si hay mas codigo puede que la pagina se redirija
+            //pero siga ejecutando lo de abajo; pero mas adelante se vera como resolverlo
+            Response.Redirect("ejemploASPX.aspx");
         }
 
-        protected void btnCheckBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         protected void btnCheckBox_Click1(object sender, EventArgs e)
         {
             cbRandom.Visible = true;
+
         }
     }
 }
