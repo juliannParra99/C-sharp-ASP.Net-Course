@@ -13,11 +13,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
 
+    
+    <!--Esta es una manera de incluir archivos, en este caso uno pero pueden ser varios
+        , haciendo referencia a la ruta y a una sola referencia. Bundles/modernizr esta en app_Start
+        es como un gestor de paquetes de dependencias
+        ;el simbolo "~" hace referencia a la ruta donde estoy parado ahora
+        -->
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <!--esto se utiliza para importar todos los archivos CSS de la carpeta CONTENT y estilizar-->
+    <webopt:bundlereference runat="server" path="~/content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
