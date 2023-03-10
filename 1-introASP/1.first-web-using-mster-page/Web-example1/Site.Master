@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web_example1.SiteMaster" %>
 
+<!--el site.master es una plantilla que van a heredar el resto de aspx, por ejemplo about, contact, default
+    todas tienen un navbar y uyn footer que parte de aca.
+    y ademas estos aspx no tienen la etiqueta form que permite el codigo form de C#
+    ´pero esta contenido dentro del site.master asique es como si lo tuvieran-->
 <!DOCTYPE html>
 
 <html lang="es">
@@ -18,6 +22,7 @@
 
 </head>
 <body>
+    <!--permite ejecutar codigo c#-->
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -51,14 +56,26 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+                        <!--el signo de fitulete indica a que pagina se redijira, y la pagina sera el nombre del 
+                            archivo aspx-->
                         <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/ejemploASPX">Ejemplo aspx</a></li>
+                        <li><a runat="server" href="~/ejemploConMaster">Ej con Master</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container body-content">
+            <!--etiquetas asp: permiten alojar contenido; aca se inyecta el contenido de la pagina que vos
+                solicites;  notar que el el default.aspx, el contact y el about tienen como ContentPlaceHolderID
+                 = MAINCONTENT, oseea que dependiendo de la ruta que visitemos el contentplaceHolder va a invocar
+                el contenido correspondiente
+                
+                En este caso ejemploASPX no tiene navbar ni footer por que no hereda de site master, si quier
+                que herede de site masater tengo que creear un nuevo form con 'pagina maestra'
+                -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />

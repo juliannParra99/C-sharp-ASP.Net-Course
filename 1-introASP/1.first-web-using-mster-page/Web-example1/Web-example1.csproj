@@ -113,6 +113,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ejemploASPX.aspx" />
+    <Content Include="ejemploConMaster.aspx" />
+    <Content Include="ejemploConMiMaster.aspx" />
+    <Content Include="ejemploHTML.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -124,6 +128,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="miMaster.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -183,8 +188,36 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ejemploASPX.aspx.cs">
+      <DependentUpon>ejemploASPX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ejemploASPX.aspx.designer.cs">
+      <DependentUpon>ejemploASPX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ejemploConMaster.aspx.cs">
+      <DependentUpon>ejemploConMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ejemploConMaster.aspx.designer.cs">
+      <DependentUpon>ejemploConMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ejemploConMiMaster.aspx.cs">
+      <DependentUpon>ejemploConMiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ejemploConMiMaster.aspx.designer.cs">
+      <DependentUpon>ejemploConMiMaster.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="miMaster.Master.cs">
+      <DependentUpon>miMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="miMaster.Master.designer.cs">
+      <DependentUpon>miMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
