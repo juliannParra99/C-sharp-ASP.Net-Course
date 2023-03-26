@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-form", "web-form\web-form.csproj", "{BBE1DD2A-9C66-4C79-9D35-C8EAA36AB197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bussines", "Bussines\Bussines.csproj", "{DCDEB1F0-A536-4BCA-85E7-F52ECCE6AF7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{F2FF2379-CAC3-44C5-9EAA-B116966013EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE1DD2A-9C66-4C79-9D35-C8EAA36AB197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE1DD2A-9C66-4C79-9D35-C8EAA36AB197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE1DD2A-9C66-4C79-9D35-C8EAA36AB197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE1DD2A-9C66-4C79-9D35-C8EAA36AB197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDEB1F0-A536-4BCA-85E7-F52ECCE6AF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDEB1F0-A536-4BCA-85E7-F52ECCE6AF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDEB1F0-A536-4BCA-85E7-F52ECCE6AF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDEB1F0-A536-4BCA-85E7-F52ECCE6AF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2FF2379-CAC3-44C5-9EAA-B116966013EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FF2379-CAC3-44C5-9EAA-B116966013EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FF2379-CAC3-44C5-9EAA-B116966013EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FF2379-CAC3-44C5-9EAA-B116966013EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C94CDED-33FF-457C-9BB0-2BAB5A86F0F9}
+	EndGlobalSection
+EndGlobal
