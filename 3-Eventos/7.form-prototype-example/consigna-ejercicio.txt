@@ -1,0 +1,8 @@
+ La práctica de esta unidad te la propongo al final de la última clase.
+
+💪 La idea es que construyas lo mismo que yo, o algo parecido. Tratá de que no sea mucho más complejo, sino al contrario. Podemos arrancar con un objeto más simple, con campos sencillos, por ejemplo una clase Direccion y que tenga las propiedades Calle (string) y Altura (int) y nada más.
+
+✅ A partir de eso armar un listado, un formulario, manejar la sesión con el listado, agregarle elementos, modificarlos y borrarlos. Todo en sesión.
+
+👌 Una vez resuelto eso podemos agregarle complejidad escalando de a poco lo desarrollado agregando más campos y de otros tipos; quizá algún desplegable o alguna fecha.
+
